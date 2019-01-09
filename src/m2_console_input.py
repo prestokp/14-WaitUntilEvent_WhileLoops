@@ -3,8 +3,11 @@ This module demonstrates lets you practice INPUT from the CONSOLE.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Kirk Preston.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
+
+import math
+
 
 
 def main():
@@ -34,6 +37,8 @@ def double_a_float():
     # TODO: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+    x = (float(input('enter number:')))
+    print(float(2*x))
 
 
 def print_an_integer_many_times():
@@ -65,6 +70,10 @@ def print_an_integer_many_times():
     # TODO: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+    x = (int(input('enter integer:')))
+    for k in range(x):
+        print(int(2*x))
+
 
 
 def print_an_integer_many_times_on_one_row():
@@ -87,7 +96,11 @@ def print_an_integer_many_times_on_one_row():
     # HINT: One way to print on a SINGLE line is to build up a string
     #       and then print that (single) string.
     # -------------------------------------------------------------------------
-
+    x = (int(input('enter integer:')))
+    y = ''
+    for k in range (x):
+        y = y + ((str(2*x)))
+    print(y)
 
 def input_it_all():
     """
@@ -124,6 +137,15 @@ def input_it_all():
     # TODO: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+    x = (float(input('enter positive number:')))
+    y = (int(input('enter integer:')))
+    z = (str(input('enter string:')))
+    for k in range(y):
+        print(float(math.sqrt(x)))
+    for k in range (y):
+        print(z)
+
+
 
 
 # -----------------------------------------------------------------------------
